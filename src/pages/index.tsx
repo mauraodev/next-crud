@@ -6,6 +6,7 @@ import Layout from "@/components/Layouts";
 import Tabela from "@/components/Tabela";
 import Cliente from "@/core/Cliente";
 import Botao from "@/components/Botao";
+import Formulario from "@/components/Formulario";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,6 +33,8 @@ export default function Home() {
         <div className="flex justify-end">
           <Botao className="mb-4" cor="blue">Novo cliente</Botao>
         </div>
+
+        <Formulario cliente={clientes[0]}/>
 
         <Tabela
           clientes={clientes}
